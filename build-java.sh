@@ -2,7 +2,7 @@ ANDROID_JAR=../android-13.jar
 AAPT=./../aapt
 DX=./../dx
 APKBUILDER=./../apkbuilder
-NAME=bshift
+NAME=csdm
 mkdir gen
 mkdir bin
 mkdir bin/classes

@@ -1,4 +1,4 @@
-package in.celest.xash3d.bshift;
+package in.celest.xash3d.csdm;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -13,7 +13,7 @@ import android.content.ComponentName;
 import android.content.pm.PackageManager;
 import android.content.SharedPreferences;
 
-import in.celest.xash3d.bshift.R;
+import in.celest.xash3d.csdm.R;
 
 public class LauncherActivity extends Activity {
 	// public final static String ARGV = "in.celest.xash3d.MESSAGE";
@@ -39,7 +39,7 @@ public class LauncherActivity extends Activity {
 		editor.commit();
 		editor.apply();
 		if(cmdArgs.length() != 0) intent.putExtra("argv", cmdArgs.getText().toString());
-		intent.putExtra("gamedir", "bshift");
+		intent.putExtra("gamedir", "csdm");
 		intent.putExtra("gamelibdir", getFilesDir().getAbsolutePath().replace("/files","/lib"));
 		startActivity(intent);
     }
